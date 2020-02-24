@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="actionMenuTextColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/size_16sp</item>
+    </style>
+
+    <!--Default Normal Text -->
+    <style name="Normal_Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/size_14</item>
+    </style>
+
+    <!--Default Header Text -->
+    <style name="Header_text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/size_15</item>
+    </style>
+
+    <!--Default Normal Text color black-->
+    <style name="Normal_Primary_Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">@dimen/size_14</item>
+    </style>
+
+    <!--Default Header Text color black -->
+    <style name="Header_Primary_Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">@dimen/size_15</item>
+    </style>
+
+    <!--Default Normal Text primary color-->
+    <style name="Normal_Secondary_Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/size_14</item>
+    </style>
+
+    <!--Default Header Text primary color -->
+    <style name="Header_Secondary_Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/size_15</item>
+    </style>
+</resources>

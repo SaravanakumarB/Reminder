@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="diet"
+            type="com.myproject.reminder.database.Diet" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10"
+        app:cardCornerRadius="@dimen/size_10"
+        app:contentPadding="@dimen/size_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_day"
+                style="@style/Header_Primary_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/tv_time"
+                android:textColor="@color/colorPrimary"
+                tools:text="Monday" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/Normal_Primary_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@{diet.mealTime}"
+                android:textColor="@color/colorAccent"
+                tools:text="11:00" />
+
+            <TextView
+                android:id="@+id/tv_food"
+                style="@style/Normal_Primary_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_day"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@{diet.food}"
+                tools:text="Fruits" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

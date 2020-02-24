@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reminder</string>
+    <string name="network_unavailable">Internet connection seems to be offline</string>
+    <string name="api_error_text">Error occurred! Please try again later.</string>
+</resources>
