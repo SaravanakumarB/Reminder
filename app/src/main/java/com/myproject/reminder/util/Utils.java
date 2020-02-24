@@ -66,7 +66,7 @@ public class Utils {
             Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawable(
                     new ColorDrawable(Color.TRANSPARENT));
         }
-      //  dialog.setContentView(R.layout.progress_loading_layout);
+        dialog.setContentView(R.layout.progress_loading_layout);
         dialog.setCancelable(true);
         dialog.setCanceledOnTouchOutside(true);
         dialog.show();
